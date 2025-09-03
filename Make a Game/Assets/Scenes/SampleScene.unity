@@ -130,9 +130,9 @@ GameObject:
   - component: {fileID: 228652957}
   - component: {fileID: 228652956}
   - component: {fileID: 228652958}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Square
-  m_TagString: Ground
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -487,6 +487,7 @@ GameObject:
   - component: {fileID: 1232747358}
   - component: {fileID: 1232747357}
   - component: {fileID: 1232747361}
+  - component: {fileID: 1232747362}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -566,7 +567,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!212 &1232747359
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -656,7 +657,26 @@ MonoBehaviour:
   groundCheckRadius: 0.2
   groundLayer:
     serializedVersion: 2
+    m_Bits: 64
+--- !u!114 &1232747362
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1232747356}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e2499b217dac9741b223f969ad4f9ac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  attackPoint: {fileID: 0}
+  attackRange: 0.5
+  attackDamage: 20
+  enemyLayers:
     m_Bits: 0
+  attackRate: 2
+  nextAttackTime: 0
 --- !u!1 &1513842244
 GameObject:
   m_ObjectHideFlags: 0
